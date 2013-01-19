@@ -1,0 +1,54 @@
+	<a href="javascript:void(0);" onClick="showForm();">Add new issue</a>
+	<div style="display: none;" id="main">
+		<center>
+			<form action="" onSubmit="return false;">
+				<table>
+					<tr>
+						<td>
+							Reporter:<br />
+							<input type="text" id="reporter" name="reporter" />
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Type:<br />
+							<select id="type" name="type">
+								<option value="bug">Bug</option>
+								<option value="task">Task</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Priority:<br />
+							<select id="priority" name="priority">
+								<option value="0">Critical</option>
+								<option value="1">High</option>
+								<option value="2">Low</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Title:<br />
+							<input type="text" id="title" name="title" />
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Description:<br />
+							<textarea id="description" name="description"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<center>
+								<input onClick="submitMainForm();" class="btn btn-primary btn-large" type="submit" value="Add" /><br />
+								<a href="javascript:void(0);" onClick="hideForm();">Close</a>
+							</center>
+						</td>
+					</tr>
+				</table>
+			</form>
+		</center>
+	</div>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Simple PHP Issue Tracker</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link href="./bootstrap/css/bootstrap.css" rel="stylesheet">
+		<style>
+		body {
+			padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+		}
+		</style>
+		<link href="./bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+		
+		<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+		<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="navbar navbar-inverse navbar-fixed-top">
+			<div class="navbar-inner">
+				<div class="container">
+					<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</a>
+					<a class="brand" href="index.html">Simple PHP Issue Tracker</a>
+					<!--
+					<div class="nav-collapse collapse">
+						<ul class="nav">
+							<li class="active"><a href="#">Home</a></li>
+							<li><a href="#about">About</a></li>
+							<li><a href="#contact">Contact</a></li>
+						</ul>
+					</div>
+					-->
+					<!--/.nav-collapse -->
+				</div>
+			</div>
+		</div>
+
+		<div class="container">
+			<center>
+				<div id="mainFeeder">Loading...</div>
+				<div id="issuesFeeder"></div>
+				<div id="modalPos" style="position: fixed; top: 0px; left: 0px; width: 100%; display: none; height: 100%; background-color: rgba(0, 0, 0, 0.7);" id="modal">
+					<div id="modalCont" style="overflow-y: scroll; position: absolute; top: 50px;left: 50%; margin-left: -300px; border: 1px solid black; background-color: white; width: 600px; height: 400px;"></div>
+				</div>
+			</center>
+		</div> <!-- /container -->
+
+		<!-- Le javascript
+		================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="./bootstrap/js/jquery.js"></script>
+		<script src="./bootstrap/js/bootstrap-transition.js"></script>
+		<script src="./bootstrap/js/bootstrap-alert.js"></script>
+		<script src="./bootstrap/js/bootstrap-modal.js"></script>
+		<script src="./bootstrap/js/bootstrap-dropdown.js"></script>
+		<script src="./bootstrap/js/bootstrap-scrollspy.js"></script>
+		<script src="./bootstrap/js/bootstrap-tab.js"></script>
+		<script src="./bootstrap/js/bootstrap-tooltip.js"></script>
+		<script src="./bootstrap/js/bootstrap-popover.js"></script>
+		<script src="./bootstrap/js/bootstrap-button.js"></script>
+		<script src="./bootstrap/js/bootstrap-collapse.js"></script>
+		<script src="./bootstrap/js/bootstrap-carousel.js"></script>
+		<script src="./bootstrap/js/bootstrap-typeahead.js"></script>
+		<script src="./lib/js/main.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function(){
+			isInstalled();
+		});
+		</script>
+	</body>
+</html>

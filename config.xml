@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<db>
+		<dbUser>root</dbUser>
+		<dbPassword>jxw22</dbPassword>
+		<dbName>phpissuetracker</dbName>
+		<dbHost>localhost</dbHost>
+	</db>
+</config>
